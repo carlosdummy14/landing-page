@@ -12,10 +12,7 @@ const About = () => {
         Frontend, Freelancer
         <br />y experto en Soporte de IT
       </h3>
-      <p>
-        Te interesa contactarme intentalo tal vez por LinkedIn en lo que termino
-        de construir esta página... GRACIAS!!!
-      </p>
+      <p>Pronto tendrás noticias mías...</p>
     </div>
   );
 };
