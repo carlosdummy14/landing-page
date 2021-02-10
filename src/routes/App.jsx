@@ -5,17 +5,15 @@ import Home from '../containers/Home';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 
-const App = () => {
-  return (
-    <Router>
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
-    </Router>
-  );
-};
+const App = () => (
+  <Router>
+    <Layout>
+      <Switch>
+        <Route exact path="/landing-page" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </Router>
+);
 
 export default App;
