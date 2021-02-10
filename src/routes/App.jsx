@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from '../containers/Home';
 import NotFound from '../containers/NotFound';
@@ -9,8 +9,9 @@ const App = () => (
   <Router>
     <Layout>
       <Switch>
-        <Route exact path="/landing-page" component={Home} />
-        <Route component={NotFound} />
+        <Route exact path="/" component={Home} />
+        <Route path='/404' component={NotFound} />
+        <Redirect from='*' to='/404' />
       </Switch>
     </Layout>
   </Router>
