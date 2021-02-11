@@ -10,8 +10,7 @@ const App = () => (
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path='/404' component={NotFound} />
-        <Redirect from='*' to='/404' />
+        <Route exact path='*' component={NotFound} />
       </Switch>
     </Layout>
   </Router>
